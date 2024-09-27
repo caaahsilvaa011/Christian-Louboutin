@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Christian Louboutin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1 {
+            font-family: 'Pacifico', cursive;
+        }
+        .description {
+            font-family: 'Cinzel', serif;
+            font-size: 16px;
+            margin-top: 1rem;
+        }
+        .hidden {
+            display: none;
+        }
+        .container__imagem {
+            width: 500px;
+            height: auto;
+            margin-top: 1rem;
+        }
+        .info-text {
+            margin-top: 1rem;
+            font-size: 20px;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Christian Louboutin</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Coleção</a></li>
+                <li><a href="#">Lançamentos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="principal container">
+        <div class="container__caixa">
+            <h1 class="container__titulo">Descubra a Elegância com Sola Vermelha</h1>
+            <button class="container__botao" onclick="showImage()">Saiba Mais</button>
+            <div id="image-container" class="hidden">
+                <p class="info-text description">Onde Cada Sola Vermelha Conta Uma História de Luxo, Estilo e Ousadia, Transformando Sapatos em Verdadeiras Obras-Primas de Moda que Capturam a Essência da Feminilidade e Empoderam Aqueles que Os Usam. Cada Par é Meticulosamente Criado para Refletir a Paixão pelo Design e a Busca pela Perfeição, Oferecendo Não Apenas Conforto e Qualidade, Mas Também Uma Experiência Única que Faz com que Cada Passo Seja Uma Celebração de Elegância e Distinção. Clique na imagem para saber mais!</p>
+                <a href="https://eu.christianlouboutin.com/pt_en/ladies/shoes/" target="_blank">
+                    <img src="salto.png" alt="Sapato Christian Louboutin" class="container__imagem">
+                </a>
+            </div>
+            <p class="container__aviso">*Os preços podem variar conforme a coleção.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Christian Louboutin. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function showImage() {
+            const imageContainer = document.getElementById('image-container');
+            imageContainer.classList.toggle('hidden');
+        }
+    </script>
+</body>
+
+</html>
