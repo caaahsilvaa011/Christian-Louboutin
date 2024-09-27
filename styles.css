@@ -1,0 +1,106 @@
+:root {
+    --preto: #000;
+    --vermelho: #d40c12;
+    --branco: #ffffff;
+    --cinza: #000000;
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    color: var(--preto);
+    margin: 0;
+    padding: 0;
+    background-color: var(--cinza);
+}
+
+header {
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1.5rem;
+}
+
+nav ul li a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.principal {
+    background-image: url("img/louboutin-background.jpg");
+    background-size: cover;
+    color: var(--branco);
+    padding: 5rem;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.container__caixa {
+    margin: 2rem;
+    text-align: center;
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    width: 10px; /* Ajuste o tamanho da imagem */
+    height: auto; /* Mantém a proporção */
+    margin: 1em 0 2em 0;
+}
+
+.container__botao {
+    background-color: var(--vermelho);
+    color: var(--branco);
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__botao:hover {
+    background-color: #a00b0d;
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza);
+}
+
+footer {
+    background-color: var(--preto);
+    color: var(--branco);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+.square2 {
+    width: 10px;
+    height: 10px;
+    background-image: url(salto.png);
+    background-size: 10px;
+    border: solid 2px;
+    text-shadow: rgb(0, 0, 0) 0px 0px 2px;
+    font-size: 16px;
+  }
